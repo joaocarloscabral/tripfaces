@@ -2,7 +2,7 @@
 
 ![tripfaces](https://raw.github.com/joaocarloscabral/tripfaces/master/public/img/logo-tiny.jpg "tripfaces")
 
-Trip.js is a jQuery plugin that can help you customize a tutorial trip easily with more flexibilities. Right now Trip.js support lots of useful stuffs like **keyboard binding**, **animations**, **changing themes** ... etc. If you want to highly customize your own tutorial trip, then Trip.js is definitely worth to give it a try !
+Tripfacess is a simple composite component for JSF projects that can help you customize a tutorial trip easily with more flexibilities. This project is based on [Trip.js](http://eragonj.github.io/Trip.js/) API. Right now Trip.js support lots of useful stuffs like **keyboard binding**, **animations**, **changing themes** ... etc. If you want to highly customize your own tutorial trip, then Trip.js is definitely worth to give it a try !
 
 # Version
 
