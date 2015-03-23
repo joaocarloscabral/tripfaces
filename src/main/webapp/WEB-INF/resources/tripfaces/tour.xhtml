@@ -24,6 +24,10 @@
 </cc:interface>
 <!-- IMPLEMENTATION -->
 <cc:implementation>
+
+		<h:outputScript library="js" name="trip.min.js"/>
+		<h:outputStylesheet library="css" name="trip.min.css"/>			
+		
 		<script>
 				function putTrip(selector, text, animate, time, nav, pos, highlight) {
 					trip.tripData.push({ 
