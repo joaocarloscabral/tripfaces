@@ -12,29 +12,31 @@ Right now tripfaces and Trip.js support lots of useful stuffs like **keyboard bi
 # Setup 
 
 * pom.xml
-* `<dependencies>`  
-* `<dependency>`
-* ``
-* ``
-* ``
-* ``
-* ``
-* ``
-* ````
-    		
-    			<groupId>com.github.joaocarloscabral</groupId>
-    			<artifactId>tripfaces</artifactId>
-   			<version>0.0.1-SNAPSHOT</version>			
-    		</dependency>
-    </dependencies>
-		<repository>
-			<id>oss-sonatype</id>
-			<name>oss-sonatype</name>
-			<url>https://oss.sonatype.org/content/repositories/snapshots/</url>
-			<snapshots>
-				<enabled>true</enabled>
-			</snapshots>
-		</repository>
+*
+```xml
+<dependencies>
+	<dependency>
+	  <groupId>com.github.joaocarloscabral</groupId>
+	  <artifactId>tripfaces</artifactId>
+	  <version>0.0.1-SNAPSHOT</version>
+	</dependency>
+</dependencies>
+...
+<repositories>
+...
+	<repository>
+		<id>oss-sonatype</id>
+		<name>oss-sonatype</name>
+		<url>https://oss.sonatype.org/content/repositories/snapshots/</url>
+		<snapshots>
+			<enabled>true</enabled>
+		</snapshots>
+	</repository>
+</repositories>
+```			
+    			
+   			
+
 
 # Documentation
 
