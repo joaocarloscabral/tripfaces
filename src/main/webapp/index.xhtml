@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:trip="http://tripfaces.io/component"
+	xmlns:pt="http://xmlns.jcp.org/jsf/passthrough"
+	xmlns:h="http://java.sun.com/jsf/html">
+
+<h:head>
+	<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script type="text/javascript" src="js/trip.min.js"></script>
+	
+	<link type="text/css" rel="stylesheet" href="css/trip.min.css" />
+
+	
+
+	<title>tripfaces demo</title>
+	
+</h:head>
+<h:body>
+	<trip:tour widgetVar="trip" theme="yeti" showHeader="true" header="works like a charm " delay="-1" showCloseBox="true" backToTopWhenEnded="true" >
+		<trip:message value="hello, my name is tripfaces" target="title" showNavigation="true" position="s" />
+		<trip:message value="and im so awesome with all these effects" target="subtitle" animation="fadeInUp" showNavigation="true" position="w" expose="true"/>	
+		<trip:message value="thanks, trip.js :D" target="end" delay="4000" position="n" showCloseBox="false"/>
+	</trip:tour>
+	<h:form id="form">
+			<div style="text-align: center; margin-top: 10%;">
+			<h1 id="title">tripfaces</h1>
+			<h:commandButton id="teste" value="hi" type="button"
+				onclick="trip.start()"></h:commandButton>
+		</div>
+		<div style="text-align: center; padding-top: 10%;">
+			<h3 id="subtitle" style="margin-left: auto; margin-right: auto; width: 30%; border-radius: 5px">click	to say hello</h3>
+			
+		</div>
+	<div style="text-align: center; margin-top: 10%;">
+			<h1>tripfaces</h1>
+		</div>
+	<div style="text-align: center; margin-top: 10%;">
+			<h1>tripfaces</h1>
+		</div>
+	<div style="text-align: center; margin-top: 10%;">
+			<h1>tripfaces</h1>
+		</div>
+	<div style="text-align: center; margin-top: 10%;">
+			<h1>tripfaces</h1>
+		</div>
+	<div style="text-align: center; margin-top: 10%;">
+			<h1>tripfaces</h1>
+		</div>
+	<div style="text-align: center; margin-top: 10%;">
+			<h1>tripfaces</h1>
+		</div>
+
+		<div style="text-align: center; margin-top: 10%;">
+			<h1 id="end">tripfaces</h1>
+			
+		</div>
+	</h:form>
+</h:body>
+</html>

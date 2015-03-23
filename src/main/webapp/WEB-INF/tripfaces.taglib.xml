@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<facelet-taglib version="2.2"
+    xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-facelettaglibrary_2_2.xsd">
+    
+	<namespace>http://tripfaces.io/component</namespace>
+  		<tag>
+	 		<tag-name>tour</tag-name>
+	 		<description>teste</description>
+	  		<component>
+	    		<resource-id>
+	    			tripfaces/tour.xhtml
+	    		</resource-id>
+	    	</component>
+  		</tag>  
+  		<tag>
+	 		<tag-name>message</tag-name>
+	  		<component>
+	    		<resource-id>
+	    			tripfaces/message.xhtml
+	    		</resource-id>
+	    	</component>
+  		</tag>  
+</facelet-taglib>
