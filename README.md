@@ -66,8 +66,8 @@ Tripfaces would detect following keys to do relative actions after loading it.
 * Autostart
 
 # Author
-JSF implementation - João Carlos Cabral (kjocabral@gmail.com)
-Trip.js - EragonJ ( eragonj@eragonj.me )
+* JSF implementation - João Carlos Cabral (kjocabral@gmail.com)
+* Trip.js - EragonJ ( eragonj@eragonj.me )
 
 # License
 MIT
