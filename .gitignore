@@ -44,6 +44,7 @@ Temporary Items
 .classpath
 .settings/.jsdtscope
 .settings/org.eclipse.wst.common.component
+target/
 target/classes/messages_pt_BR.properties
 .settings/org.eclipse.jdt.core.prefs
 target/classes/messages_en_US.properties
@@ -61,3 +62,4 @@ target/classes/io/tripfaces/Message$PropertyKeys.class
 .settings/org.eclipse.wst.jsdt.ui.superType.name
 target/classes/io/tripfaces/Tour.class
 .settings/org.eclipse.wst.common.project.facet.core.xml
+
