@@ -1,6 +1,6 @@
 # tripfaces
 
-![Trip.js](https://raw.githubt.com/joaocarloscabral/tripfaces/master/public/img/logo-tiny.jpg "Trip.js")
+![tripfaces](https://raw.githubt.com/joaocarloscabral/tripfaces/master/public/img/logo-tiny.jpg "tripfaces")
 
 Trip.js is a jQuery plugin that can help you customize a tutorial trip easily with more flexibilities. Right now Trip.js support lots of useful stuffs like **keyboard binding**, **animations**, **changing themes** ... etc. If you want to highly customize your own tutorial trip, then Trip.js is definitely worth to give it a try !
 
