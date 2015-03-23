@@ -2,7 +2,8 @@
 
 ![tripfaces](https://raw.github.com/joaocarloscabral/tripfaces/master/public/img/logo-tiny.jpg "tripfaces")
 
-Tripfacess is a simple composite component for JSF projects that can help you customize a tutorial trip easily with more flexibilities. This project is based on [Trip.js](http://eragonj.github.io/Trip.js/) API. Right now Trip.js support lots of useful stuffs like **keyboard binding**, **animations**, **changing themes** ... etc. If you want to highly customize your own tutorial trip, then Trip.js is definitely worth to give it a try !
+Tripfaces is a simple composite component for JSF projects that can help you customize a tutorial trip easily with more flexibilities. This project is based on [Trip.js](http://eragonj.github.io/Trip.js/) and the objective is keep the JSF code more clean. 
+Right now tripfaces and Trip.js support lots of useful stuffs like **keyboard binding**, **animations**, **changing themes** ... etc. If you want to highly customize your own tutorial trip on your JSF project, then Tripfaces is definitely worth to give it a try !
 
 # Version
 
@@ -10,7 +11,30 @@ Tripfacess is a simple composite component for JSF projects that can help you cu
 
 # Setup 
 
-* include //TODO maven example
+* pom.xml
+* `<dependencies>`  
+* `<dependency>`
+* ``
+* ``
+* ``
+* ``
+* ``
+* ``
+* ````
+    		
+    			<groupId>com.github.joaocarloscabral</groupId>
+    			<artifactId>tripfaces</artifactId>
+   			<version>0.0.1-SNAPSHOT</version>			
+    		</dependency>
+    </dependencies>
+		<repository>
+			<id>oss-sonatype</id>
+			<name>oss-sonatype</name>
+			<url>https://oss.sonatype.org/content/repositories/snapshots/</url>
+			<snapshots>
+				<enabled>true</enabled>
+			</snapshots>
+		</repository>
 
 # Documentation
 
