@@ -42,34 +42,32 @@ Right now tripfaces and Trip.js support lots of useful stuffs like **keyboard bi
 
 Please check the [setup](http://eragonj.github.io/Trip.js/doc-setup.html) and [configuration](http://eragonj.github.io/Trip.js/doc-configuration.html) here !
 
-# How to Contribute
-
 # Key Binding
 
-Trip.js would detect following keys to do relative actions after loading it.
+Tripfaces would detect following keys to do relative actions after loading it.
 
 * Right and Down arrows  - Go to next trip
 * Left and Up arrows     - Go back to previous trip
 * Space                  - pause / resume trip
 * Esc                    - Stop trip
 
-# API
+# API (widgetVar)
 
-* trip.start()  - start your trip
-* trip.stop()   - stop your trip
-* trip.pause()  - pause / resume your trip ( same as trip.resume() )
-* trip.resume() - pause / resume your trip ( same as trip.pause()  )
-* trip.next()   - jump to next step
-* trip.prev()   - jump back to previous step
+* widgetVar.start()  - start your trip
+* widgetVar.stop()   - stop your trip
+* widgetVar.pause()  - pause / resume your trip ( same as widgetVar.resume() )
+* widgetVar.resume() - pause / resume your trip ( same as widgetVar.pause()  )
+* widgetVar.next()   - jump to next step
+* widgetVar.prev()   - jump back to previous step
 
 # TODO
 
-* Add data-x to define steps ( make the setup easier )
-* Add UI for pause/play/stop to make users know how to interact
-* Don't depend on jQuery
+* Ajax listener 
+* Autostart
 
 # Author
-EragonJ ( eragonj@eragonj.me )
+JSF implementation - João Carlos Cabral (kjocabral@gmail.com)
+Trip.js - EragonJ ( eragonj@eragonj.me )
 
 # License
 MIT
