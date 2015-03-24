@@ -49,6 +49,8 @@ Right now tripfaces and Trip.js support lots of useful stuffs like **keyboard bi
 	<trip:tour widgetVar="trip" >
 		<trip:message value="hello, my name is tripfaces" target="title"  />
 	</trip:tour>
+	
+	<h:outputText id="title" value="#{messages.hello_tripfaces}"/>
 </ui:composition
 ```
    			
