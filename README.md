@@ -46,8 +46,8 @@ Right now tripfaces and Trip.js support lots of useful stuffs like **keyboard bi
 	
 	...
 	
-	<trip:tour widgetVar="trip" > 
-			
+	<trip:tour widgetVar="trip" >
+		<trip:message value="hello, my name is tripfaces" target="title"  />
 	</trip:tour>
 </ui:composition
 ```
