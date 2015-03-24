@@ -12,7 +12,7 @@ Right now tripfaces and Trip.js support lots of useful stuffs like **keyboard bi
 # Setup 
 
 * pom.xml
-*
+
 ```xml
 <dependencies>
 	<dependency>
@@ -35,7 +35,7 @@ Right now tripfaces and Trip.js support lots of useful stuffs like **keyboard bi
 	</repository>
 </repositories>
 ```			
-
+* xhtml file
 ```xhtml
 <ui:composition xmlns="http://www.w3.org/1999/xhtml"
 	xmlns:h="http://java.sun.com/jsf/html"
