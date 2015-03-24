@@ -19,6 +19,7 @@ Right now tripfaces and Trip.js support lots of useful stuffs like **keyboard bi
 	  <groupId>com.github.joaocarloscabral</groupId>
 	  <artifactId>tripfaces</artifactId>
 	  <version>0.0.1-SNAPSHOT</version>
+	  <type>war</type>
 	</dependency>
 </dependencies>
 ...
@@ -34,7 +35,22 @@ Right now tripfaces and Trip.js support lots of useful stuffs like **keyboard bi
 	</repository>
 </repositories>
 ```			
-    			
+
+```xhtml
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:trip="http://tripfaces.io/component"
+	template="../templates/template.xhtml">
+	
+	...
+	
+	<trip:tour widgetVar="trip" > 
+			
+	</trip:tour>
+</ui:composition
+```
    			
 
 
