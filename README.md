@@ -46,9 +46,15 @@ Right now tripfaces and Trip.js support lots of useful stuffs like **keyboard bi
 	
 	...
 	
-	<trip:tour widgetVar="trip" > 
-			
+	<trip:tour widgetVar="trip" >
+		<trip:message value="#{messages.hi_my_name_tripfaces}" target="title"  />
 	</trip:tour>
+	
+	...
+	
+	<h:outputText id="title" value="#{messages.hello_tripfaces}"/>
+	
+	<h:commandButton value="#{messages.start_trip}" type="button" onclick="trip.start()"/>
 </ui:composition
 ```
    			
