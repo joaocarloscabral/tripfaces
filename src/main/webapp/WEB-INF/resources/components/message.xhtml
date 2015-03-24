@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:cc="http://xmlns.jcp.org/jsf/composite"
+	xmlns:h="http://xmlns.jcp.org/jsf/html">
+
+<cc:interface componentType="io.tripfaces.Message">
+	<cc:attribute name="target" />
+	<cc:attribute name="value" />
+	<cc:attribute name="animation" default="tada" />
+	<cc:attribute name="delay" default="1000" />
+	<cc:attribute name="position" />	
+	<cc:attribute name="expose" default="false" />	
+	<cc:attribute name="canGoPrev" default="true" />
+	<cc:attribute name="canGoNext" default="true" />	
+	<cc:attribute name="onTripStart" default=" " />
+	<cc:attribute name="onTripEnd" default=" " />
+	<cc:attribute name="onTripPause" default=" " />
+	<cc:attribute name="onTripResume" default=" " />
+	<cc:attribute name="onTripStop" default=" " />
+	<cc:attribute name="onTripChange" default=" " />
+	<cc:attribute name="onTripClose" default=" " />
+
+</cc:interface>
+
+<cc:implementation>			
+					putTrip($('\##{cc.target}'), '#{cc.value}', '#{cc.animation}', #{cc.delay}, '#{cc.position}', #{cc.expose},
+					#{cc.canGoPrev}, #{cc.canGoNext},
+					function(i, tripData) {#{cc.onTripStart}}, function(i, tripData){#{cc.onTripEnd}}, function(i, tripData){#{cc.onTripPause}},
+					function(i, tripData){#{cc.onTripResume}}, function(i, tripData){#{cc.onTripStop}}, function(i, tripData){#{cc.onTripChange}},
+					function(i, tripData){ #{cc.onTripClose}});	
+</cc:implementation>
+</html>
+
+

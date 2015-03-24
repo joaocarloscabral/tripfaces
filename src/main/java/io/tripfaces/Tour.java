@@ -5,9 +5,10 @@ import javax.faces.component.UINamingContainer;
 
 @FacesComponent("io.tripfaces.Tour")
 public class Tour extends UINamingContainer {
-
+	
 	enum PropertyKeys {
-		theme, widgetVar, showHeader, header, animation, delay, showCloseBox, showNavigation, backToTopWhenEnded, onStart, onEnd, onTripStop, onTripChange, onTripClose
+		theme, widgetVar, showHeader, header, animation, showCloseBox, showNavigation, backToTopWhenEnded, onStart, onEnd,
+		finishLabel, prevLabel, nextLabel, enableKeyBinding, enableAnimation, skipUndefinedTrip
 	}
 
 	public String getTheme() {
@@ -50,14 +51,6 @@ public class Tour extends UINamingContainer {
 		getStateHelper().put(PropertyKeys.animation, animation);
 	}
 
-	public void setDelay(String delay) {
-		getStateHelper().put(PropertyKeys.delay, delay);
-	}
-
-	public String getDelay() {
-		return (String) getStateHelper().get(PropertyKeys.delay);
-	}
-
 	public String getShowCloseBox() {
 		return (String) getStateHelper().get(PropertyKeys.showCloseBox);
 	}
@@ -96,30 +89,53 @@ public class Tour extends UINamingContainer {
 	
 	public void setOnEnd(String onEnd) {
 		getStateHelper().put(PropertyKeys.onEnd, onEnd);
-	}
-	
-	public String getOnTripStop() {
-		return (String) getStateHelper().get(PropertyKeys.onTripStop);
 	}	
-
-	public void setOnTripStop(String onTripStop) {
-		getStateHelper().put(PropertyKeys.onTripStop, onTripStop);
+	
+	public String getFinishLabel() {
+		return (String) getStateHelper().get(PropertyKeys.finishLabel);
 	}
 	
-	public String getOnTripChange() {
-		return (String) getStateHelper().get(PropertyKeys.onTripChange);
+	public void setFinishLabel(String finishLabel) {
+		getStateHelper().put(PropertyKeys.finishLabel, finishLabel);
+	}	
+	
+	public String getPrevLabel() {
+		return (String) getStateHelper().get(PropertyKeys.prevLabel);
 	}
 	
-	public void setOnTripChange(String onTripChange) {
-		getStateHelper().put(PropertyKeys.onTripChange, onTripChange);
+	public void setPrevLabel(String prevLabel) {
+		getStateHelper().put(PropertyKeys.prevLabel, prevLabel);
+	}	
+	
+	public String getNextLabel() {
+		return (String) getStateHelper().get(PropertyKeys.nextLabel);
 	}
 	
-	public String getOnTripClose() {
-		return (String) getStateHelper().get(PropertyKeys.onTripClose);
+	public void setNextLabel(String nextLabel) {
+		getStateHelper().put(PropertyKeys.nextLabel, nextLabel);
 	}
 	
-	public void setOnTripClose(String onTripClose) {
-		getStateHelper().put(PropertyKeys.onTripClose, onTripClose);
-	}		
-	 
+	public String getEnableKeyBinding() {
+		return (String) getStateHelper().get(PropertyKeys.enableKeyBinding);
+	}
+	
+	public void setEnableKeyBinding(String enableKeyBinding) {
+		getStateHelper().put(PropertyKeys.enableKeyBinding, enableKeyBinding);
+	}	
+	
+	public String getEnableAnimation() {
+		return (String) getStateHelper().get(PropertyKeys.enableAnimation);
+	}
+	
+	public void setEnableAnimation(String enableAnimation) {
+		getStateHelper().put(PropertyKeys.enableAnimation, enableAnimation);
+	}	
+	
+	public String getSkipUndefinedTrip() {
+		return (String) getStateHelper().get(PropertyKeys.skipUndefinedTrip);
+	}
+	
+	public void setSkipUndefinedTrip(String skipUndefinedTrip) {
+		getStateHelper().put(PropertyKeys.skipUndefinedTrip, skipUndefinedTrip);
+	}
 }
