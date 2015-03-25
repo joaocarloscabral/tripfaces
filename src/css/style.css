@@ -1,0 +1,27 @@
+
+.logoContainer {
+	text-align: center;
+	margin: 2%;
+}
+
+.demoContainer {
+	text-align: center;
+}
+
+.section-tout {
+  padding: 20px;
+  background: #ecf9fb;
+  margin: 20px 0;
+}
+
+.step {
+  margin: 40px 0;
+}
+
+.fork-button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  border: 0;
+  z-index: 999;
+}
