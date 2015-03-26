@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>tripfaces</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description"
+	content="a simple JSF implementation to create awesome interactive tours. based on tripfaces">
+<meta name="author" content="João Carlos Cabral">
+
+<!--link rel="stylesheet/less" href="less/bootstrap.less" type="text/css" /-->
+<!--link rel="stylesheet/less" href="less/responsive.less" type="text/css" /-->
+<!--script src="js/less-1.3.3.min.js"></script-->
+<!--append ‘#!watch’ to the browser URL, then refresh the page. -->
+
+<link href="css/bootstrap.css" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet">
+<link href="css/font-awesome.min.css" rel="stylesheet">
+<link href="css/trip.min.css" rel="stylesheet">
+
+<!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+<!--[if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+  <![endif]-->
+
+<link rel="shortcut icon" href="img/favicon.ico">
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/trip.min.js"></script>
+<script type="text/javascript" src="js/scripts.js"></script>
+</head>
+
+
+
+<body>
+	<script data-cfasync="false" type="text/javascript" src="//filamentapp.s3.amazonaws.com/991073f47b88668292ca9ed89190629d.js" async="async"></script>
+	
+	<a class="fork-button"
+		href="https://github.com/joaocarloscabral/tripfaces"> <img
+		style="position: absolute; top: 0; right: 0; border: 0;"
+		src="https://s3.amazonaws.com/github/ribbons/forkme_right_gray_6d6d6d.png"
+		alt="Fork me on GitHub">
+	</a>
+	<div class="container">
+		<div class="row clearfix">
+			<div class="col-md-12 column">
+				<nav class="navbar navbar-default" role="navigation">
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle" data-toggle="collapse"
+							data-target="#bs-example-navbar-collapse-1">
+							<span class="sr-only">Toggle navigation</span><span
+								class="icon-bar"></span><span class="icon-bar"></span><span
+								class="icon-bar"></span>
+						</button>
+						<a class="navbar-brand" href="#">tripfaces</a>
+					</div>
+
+					<div class="collapse navbar-collapse"
+						id="bs-example-navbar-collapse-1">
+						<ul class="nav navbar-nav">
+							<li><a href="./index.html">home</a></li>
+							<li class="active"><a href="#">documentationn</a></li>
+						</ul>
+						<ul class="nav navbar-nav navbar-right">
+							<li><a href="https://github.com/joaocarloscabral">by
+									João Carlos Cabral</a></li>
+						</ul>
+					</div>
+
+				</nav>
+			</div>
+		</div>
+		<div class="row clearfix">
+			<div class="col-md-12 column">
+				<div class="logoContainer">
+					<img
+						src="https://raw.github.com/joaocarloscabral/tripfaces/master/public/img/logo-tiny.jpg"
+						alt="logo" />
+				</div>
+				<div class="markdown-body">
+					<h1 id="configuration">Configuration</h1>
+					<p>in tripfaces, we provide three three kind of options for
+						developers to customize their own trips.</p>
+					<ol>
+						<li>tour tag properties - change the default behavior of
+							tripfaces and would influence all trips.</li>
+						<li>message options - only change the behavior of specifc
+							trip and won't influence the others.</li>
+					</ol>
+					<h2 id="global-options">tour options</h2>
+					<h4 id="widgetVar">widgetVar</h4>
+					<p>you can set widgetVar if you want start your trip manually.</p>
+					<ul>
+						<li>type : <code>String</code></li>
+						<li>default : <code>trip</code></li>
+					</ul>
+					<h4 id="triptheme">theme</h4>
+					<p>
+						you can set which theme to use, now tripfaces support <strong>white</strong>,
+						<strong>black</strong>, <strong>yeti</strong> and <strong>dark</strong>
+						4 themes.
+					</p>
+					<ul>
+						<li>type : <code>String</code></li>
+						<li>default :<code>dark</code></li>
+					</ul>
+					<h4 id="autoStart">autoStart</h4>
+					<p>you can decide if your trip will start by itself (document ready).</p>
+					<ul>
+						<li>type : <code>Boolean</code></li>
+						<li>default : <code>true</code></li>
+					</ul>
+					<h4 id="backtotopwhenended">backToTopWhenEnded</h4>
+					<p>you can ask tripfaces go back to top when ended.</p>
+					<ul>
+						<li>type : <code>Boolean</code></li>
+						<li>default : <code>false</code></li>
+					</ul>
+					<h4 id="enablekeybinding">enableKeyBinding</h4>
+					<p>you can decide to bind key events for trip navigations or
+						not.</p>
+					<ul>
+						<li>type : <code>Boolean</code></li>
+						<li>default : <code>true</code></li>
+					</ul>
+					<h4 id="enableanimation">enableAnimation</h4>
+					<p>you can enable animations on tripBlock.</p>
+					<ul>
+						<li>type : <code>Boolean</code></li>
+						<li>default : <code>true</code></li>
+					</ul>
+					<h4 id="showclosebox">showCloseBox</h4>
+					<p>you can decide to add small close icon on each trip or not</p>
+					<ul>
+						<li>type : <code>Boolean</code></li>
+						<li>default : <code>false</code></li>
+					</ul>
+					<h4 id="showheader">showHeader</h4>
+					<p>
+						ff you want to show no matter with default or customized header,
+						you have to set this value to true. You can check <strong>header</strong>
+						option for more details.
+					</p>
+					<ul>
+						<li>type : <code>Boolean</code></li>
+						<li>default : <code>false</code></li>
+					</ul>
+					<h4 id="shownavigation">showNavigation</h4>
+					<p>Toggle navigation buttons</p>
+					<ul>
+						<li>type : <code>Boolean</code></li>
+						<li>default : <code>false</code></li>
+					</ul>
+					<h4 id="header">header</h4>
+					<p>
+						this is the header for each trip. You can customize your own if
+						you don't want to use default one. You can put
+						<code>{{tripIndex}}</code>
+						and
+						<code>{{tripTotal}}</code>
+						in the title to notify users about the number of trips and current
+						index of trip. Later when rendering, tripfaces will replace them
+						with right information.
+					</p>
+					<ul>
+						<li>type : <code>String</code></li>
+						<li>default : <code>step {{tripIndex}}</code></li>
+					</ul>
+					<h4 id="prevlabel">prevLabel</h4>
+					<p>label for the previous button.</p>
+					<ul>
+						<li>type : <code>String</code></li>
+						<li>default : <code>Prev</code></li>
+					</ul>
+					<h4 id="prevlabel">prevLabel</h4>
+					<p>label for the next button.</p>
+					<ul>
+						<li>type : <code>String</code></li>
+						<li>default : <code>Next</code></li>
+					</ul>
+					<h4 id="finishlabel">finishLabel</h4>
+					<p>label for the finish button.</p>
+					<ul>
+						<li>type : <code>String</code></li>
+						<li>default : <code>Done</code></li>
+					</ul>
+					<h4 id="animation">animation</h4>
+					<p>animation that would be applied on the tripBlock.</p>
+					<ul>
+						<li>type : <code>String</code></li>
+						<li>default : <code>tada</code></li>
+					</ul>
+					<h4 id="onstart-">onStart()</h4>
+					<p>you can set a callback function triggered when tripfaces
+						starts.</p>
+					<ul>
+						<li>type : <code>JavaScript code</code></li>
+						<li>default : <code> </code></li>
+					</ul>
+					<h4 id="onend-">onEnd()</h4>
+					<p>you can set a callback function triggered when tripfaces ends.</p>
+					<ul>
+						<li>Type : <code>JavaScript code</code></li>
+						<li>Default : <code> </code></li>
+					</ul>
+
+					<h2 id="local-options">message tag properties</h2>
+					<h4 id="sel">target</h4>
+					<p>which id is referenced in this step</p>
+					<ul>
+						<li>type: <code>String</code></li>
+						<li>required: <code>true</code></li>
+					</ul>
+					<h4 id="content-required-">
+						value <strong>[required]</strong>
+					</h4>
+					<p>
+						what information that you want to show to users. You can put
+						<code>{{tripIndex}}</code>
+						and
+						<code>{{tripTotal}}</code>
+						in the content to notify users about the number of trips and
+						current index of trip. later when rendering, tripfaces will
+						replace them with right information.
+					</p>
+					<ul>
+						<li>type : <code>String</code></li>
+					</ul>
+					<h4 id="position">position</h4>
+					<p>
+						what position would you prefer for the tripBlock. we support 4
+						different positions :
+						<code>e</code>
+						,
+						<code>w</code>
+						,
+						<code>n</code>
+						,
+						<code>s</code>
+						.
+					</p>
+					<ul>
+						<li>type : <code>String</code></li>
+						<li>default : <code>'n'</code></li>
+					</ul>
+					<h4 id="expose">expose</h4>
+					<p>you can enable this option to expose your selected element
+						in this trip.</p>
+					<ul>
+						<li>type : <code>Boolean</code> or <code>String</code> (for
+							id referring)
+						</li>
+						<li>default : <code>false</code></li>
+					</ul>
+					<h4 id="delay">delay</h4>
+					<p>
+						every trip will be presented for 1 second (1000 ms) by default.
+						set this value to
+						<code>-1</code>
+						will prevent auto-advancing and you must manually call
+						<code>widgetVar.next()</code>
+						.
+					</p>
+					<ul>
+						<li>type : <code>Number</code></li>
+						<li>default : <code>1000</code></li>
+					</ul>
+					<h4 id="cangoprev">canGoPrev</h4>
+					<p>determines if the user can go backwards. if set to a
+						function it is called and the response is evaluated.</p>
+					<ul>
+						<li>type : <code>Boolean</code></li>
+						<li>default : <code>true</code></li>
+					</ul>
+					<h4 id="cangonext">canGoNext</h4>
+					<p>determines if the user can go forward. if set to a function
+						it is called and the response is evaluated.</p>
+					<ul>
+						<li>type : <code>Boolean</code></li>
+						<li>default : <code>true</code></li>
+					</ul>
+					<h4 id="animation">animation</h4>
+					<p>animation that would be applied on the tripBlock.</p>
+					<ul>
+						<li>type : <code>String</code></li>
+						<li>default : <code>tada</code></li>
+					</ul>
+					<h4 id="ontripstart-tripindex-tripobject-">onTripStart</h4>
+					<p>you can set a callback function triggered when each trip
+						starts. you can use two car, 'i' and 'tripData'.</p>
+					<ul>
+						<li>type : <code>JavaScript code</code></li>
+						<li>default : <code> </code></li>
+					</ul>
+					<h4 id="ontripend-tripindex-tripobject-">onTripEnd</h4>
+					<p>you can set a callback function triggered when each trip
+						ends. you can use two car, 'i' and 'tripData'.</p>
+					<ul>
+						<li>type : <code>JavaScript code</code></li>
+						<li>default : <code> </code></li>
+					</ul>
+					<h4 id="ontripstop-tripindex-tripobject-">onTripStop</h4>
+					<p>you can set a callback function triggered when any trip is
+						stopped. you can use two car, 'i' and 'tripData'.</p>
+					<ul>
+						<li>type : <code>JavaScript code</code></li>
+						<li>default : <code> </code></li>
+					</ul>
+					<h4 id="ontrippause-tripindex-tripobject-">onTripPause</h4>
+					You can set a callback function triggered when any trip is paused
+					you can use two car, 'i' and 'tripData'.
+					</p>
+					<ul>
+						<li>type : <code>JavaScript code</code></li>
+						<li>default : <code> </code></li>
+					</ul>
+					<h4 id="ontripresume-tripindex-tripobject-">onTripResume</h4>
+					<p>you can set a callback function triggered when any trip is
+						resumed. you can use two car, 'i' and 'tripData'.</p>
+					<ul>
+						<li>type : <code>JavaScript code</code></li>
+						<li>default : <code> </code></li>
+					</ul>
+					<h4 id="ontripchange-tripindex-tripobject-">onTripChange</h4>
+					<p>you can set a callback function triggered when any trip
+						changes to another one. you can use two car, 'i' and 'tripData'.</p>
+					<ul>
+						<li>type : <code>JavaScript code</code></li>
+						<li>default : <code> </code></li>
+					</ul>
+					<h4 id="ontripclose-tripindex-tripobject-">onTripClose</h4>
+					<p>you can set a callback function triggered when any trip is
+						closed. you can use two car, 'i' and 'tripData'.</p>
+					<ul>
+						<li>type : <code>JavaScript code</code></li>
+						<li>default : <code> </code></li>
+					</ul>
+
+				</div>
+			</div>
+		</div>
+
+	</div>
+</body>
+</html>
