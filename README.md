@@ -62,7 +62,7 @@ Right now tripfaces and Trip.js support lots of useful stuffs like **keyboard bi
 
 # Documentation
 
-Please check our documentation on [tripfaces site](http://joaocarloscabral.github.io/tripfaces/) 
+Please check our documentation on [tripfaces site](http://tripfaces.org) 
 
 # Key Binding
 
