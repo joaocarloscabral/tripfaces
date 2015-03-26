@@ -71,7 +71,7 @@ $(document).ready(function() {
       delay : 7000
     }
   ], {
-    tripTheme : "black",
+    tripTheme : "dark",
     onStart : function() {
       console.log("onStart");
     },
