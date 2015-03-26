@@ -1,9 +1,9 @@
-package io.tripfaces;
+package src.main.java.org.tripfaces;
 
 import javax.faces.component.FacesComponent;
 import javax.faces.component.UINamingContainer;
 
-@FacesComponent("io.tripfaces.Message")
+@FacesComponent("org.tripfaces.Message")
 public class Message extends UINamingContainer {
 
 	enum PropertyKeys {

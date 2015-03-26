@@ -1,9 +1,9 @@
-package io.tripfaces;
+package src.main.java.org.tripfaces;
 
 import javax.faces.component.FacesComponent;
 import javax.faces.component.UINamingContainer;
 
-@FacesComponent("io.tripfaces.Tour")
+@FacesComponent("org.tripfaces.Tour")
 public class Tour extends UINamingContainer {
 	
 	enum PropertyKeys {
