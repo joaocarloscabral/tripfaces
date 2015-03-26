@@ -41,7 +41,7 @@ Right now tripfaces and Trip.js support lots of useful stuffs like **keyboard bi
 	xmlns:h="http://java.sun.com/jsf/html"
 	xmlns:f="http://java.sun.com/jsf/core"
 	xmlns:ui="http://java.sun.com/jsf/facelets"
-	xmlns:trip="http://tripfaces.io/component"
+	xmlns:trip="http://tripfaces.org/component"
 	template="../templates/template.xhtml">
 	
 	...
