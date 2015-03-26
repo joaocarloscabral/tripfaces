@@ -16,8 +16,8 @@ Right now tripfaces and Trip.js support lots of useful stuffs like **keyboard bi
 ```xml
 <dependencies>
 	<dependency>
-	  <groupId>com.github.joaocarloscabral</groupId>
-	  <artifactId>tripfaces</artifactId>
+	  <groupId>org.tripfaces</groupId>
+	  <artifactId>components</artifactId>
 	  <version>0.0.1-SNAPSHOT</version>
 	  <type>war</type>
 	</dependency>
@@ -41,7 +41,7 @@ Right now tripfaces and Trip.js support lots of useful stuffs like **keyboard bi
 	xmlns:h="http://java.sun.com/jsf/html"
 	xmlns:f="http://java.sun.com/jsf/core"
 	xmlns:ui="http://java.sun.com/jsf/facelets"
-	xmlns:trip="http://tripfaces.org/component"
+	xmlns:trip="http://tripfaces.org/components"
 	template="../templates/template.xhtml">
 	
 	...
