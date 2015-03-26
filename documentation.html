@@ -28,12 +28,22 @@
 <script type="text/javascript" src="js/jquery.min.js"></script>
 <script type="text/javascript" src="js/bootstrap.min.js"></script>
 <script type="text/javascript" src="js/trip.min.js"></script>
+<script id="twitter-wjs" src="http://platform.twitter.com/widgets.js"></script>
 <script type="text/javascript" src="js/scripts.js"></script>
 </head>
 
 
 
-<body>	
+<body>
+	<div id="fb-root"></div>
+	<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.3";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
 	<a class="fork-button"
 		href="https://github.com/joaocarloscabral/tripfaces"> <img
 		style="position: absolute; top: 0; right: 0; border: 0;"
@@ -76,27 +86,30 @@
 						src="https://raw.github.com/joaocarloscabral/tripfaces/master/public/img/logo-tiny.jpg"
 						alt="logo" />
 				</div>
-				
+
 				<div class="social-buttons-container">
 					<div class="social-buttons clearfix">
-						<div class="fb-like" style="width: 50px 1important; margin-top: 5px"
+						<div class="fb-like"
+							style="width: 50px 1important; margin-top: 5px"
 							data-href="http://joaocarloscabral.github.io/tripfaces/"
 							data-layout="button_count" data-action="like"
 							data-show-faces="true" data-share="false"></div>
-						<div class="github" style="width: 50px !important; margin-top: 5px">
+						<div class="github"
+							style="width: 50px !important; margin-top: 5px">
 							<iframe
 								src="http://ghbtns.com/github-btn.html?user=joaocarloscabral&amp;repo=tripfaces&amp;type=watch&amp;count=true"
 								allowtransparency="true" frameborder="0" scrolling="0"
 								width="120" height="20"></iframe>
 						</div>
-						<div class="twitter" style="width: 50px !important; margin-top: 5px">
-							<a data-url="http://joaocarloscabral.github.io/tripfaces/"  
+						<div class="twitter"
+							style="width: 50px !important; margin-top: 5px">
+							<a data-url="http://joaocarloscabral.github.io/tripfaces/"
 								href="https://twitter.com/share" data-hashtags="tripfaces"
 								class="twitter-share-button">Tweet</a>
 						</div>
 					</div>
 				</div>
-				
+
 				<div class="markdown-body">
 					<h1 id="configuration">Configuration</h1>
 					<p>in tripfaces, we provide three three kind of options for
@@ -125,7 +138,8 @@
 						<li>default :<code>dark</code></li>
 					</ul>
 					<h4 id="autoStart">autoStart</h4>
-					<p>you can decide if your trip will start by itself (document ready).</p>
+					<p>you can decide if your trip will start by itself (document
+						ready).</p>
 					<ul>
 						<li>type : <code>Boolean</code></li>
 						<li>default : <code>true</code></li>
@@ -218,7 +232,8 @@
 						<li>default : <code> </code></li>
 					</ul>
 					<h4 id="onend-">onEnd()</h4>
-					<p>you can set a callback function triggered when tripfaces ends.</p>
+					<p>you can set a callback function triggered when tripfaces
+						ends.</p>
 					<ul>
 						<li>Type : <code>JavaScript code</code></li>
 						<li>Default : <code> </code></li>
