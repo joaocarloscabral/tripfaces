@@ -28,10 +28,19 @@
 <script type="text/javascript" src="js/jquery.min.js"></script>
 <script type="text/javascript" src="js/bootstrap.min.js"></script>
 <script type="text/javascript" src="js/trip.min.js"></script>
+<script id="twitter-wjs" src="http://platform.twitter.com/widgets.js"></script>
 <script type="text/javascript" src="js/scripts.js"></script>
 </head>
 
 <body>
+	<div id="fb-root"></div>
+	<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v2.3";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
 	<a class="fork-button"
 		href="https://github.com/joaocarloscabral/tripfaces"> <img
 		style="position: absolute; top: 0; right: 0; border: 0;"
@@ -74,8 +83,27 @@
 						src="https://raw.github.com/joaocarloscabral/tripfaces/master/public/img/logo-tiny.jpg"
 						alt="logo" />
 				</div>
-				<script data-cfasync="false" type="text/javascript" src="//filamentapp.s3.amazonaws.com/991073f47b88668292ca9ed89190629d.js" async="async"></script>
-				
+
+				<div class="social-buttons-container">
+					<div class="social-buttons clearfix">
+						<div class="fb-like"
+							data-href="http://joaocarloscabral.github.io/tripfaces/"
+							data-layout="button_count" data-action="like"
+							data-show-faces="true" data-share="false"></div>
+						<div class="github">
+							<iframe
+								src="http://ghbtns.com/github-btn.html?user=joaocarloscabral&amp;repo=tripfaces&amp;type=watch&amp;count=true"
+								allowtransparency="true" frameborder="0" scrolling="0"
+								width="152" height="20"></iframe>
+						</div>
+						<div class="twitter">
+							<a data-url="http://joaocarloscabral.github.io/tripfaces/"
+								href="https://twitter.com/share" data-hashtags="tripfaces"
+								class="twitter-share-button">Tweet</a>
+						</div>
+					</div>
+				</div>
+
 				<div class="demoContainer">
 					<button type="button"
 						class="start-demo-index btn btn-lg btn-success"
@@ -131,17 +159,30 @@
 
 				<ol>
 					<li>
-						<p><b>a.</b> this implementation use composite components from JSF 2.2.
-							make sure that your project is running with 2.2 jsf version.</p>						
-						<p><b>b.</b> put this depedency in your project's pom </p> <script
+						<p>
+							<b>a.</b> this implementation use composite components from JSF
+							2.2. make sure that your project is running with 2.2 jsf version.
+						</p>
+						<p>
+							<b>b.</b> put this depedency in your project's pom
+						</p> <script
 							src="https://gist.github.com/joaocarloscabral/f290c122dcf6aed70472.js"></script>
 					</li>
 					<li>
-						<p><b>a.</b> add our namespace in your <i>xhtml page: xmlns:trip="http://tripfaces.io/component"</i></p>
-						<p><b>b.</b> add tour tag and set the widgetVar </p>
-						<p><b>c.</b> add message tag, set the value and a id component </p>
-						<p><b>d.</b> call widgetVar.start() and enjoy it </p> 
-						<script	src="https://gist.github.com/joaocarloscabral/d9f26c2a27a77b8a72f1.js"></script>
+						<p>
+							<b>a.</b> add our namespace in your <i>xhtml page:
+								xmlns:trip="http://tripfaces.io/component"</i>
+						</p>
+						<p>
+							<b>b.</b> add tour tag and set the widgetVar
+						</p>
+						<p>
+							<b>c.</b> add message tag, set the value and a id component
+						</p>
+						<p>
+							<b>d.</b> call widgetVar.start() and enjoy it
+						</p> <script
+							src="https://gist.github.com/joaocarloscabral/d9f26c2a27a77b8a72f1.js"></script>
 					</li>
 				</ol>
 			</div>

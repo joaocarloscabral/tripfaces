@@ -25,3 +25,13 @@
   border: 0;
   z-index: 999;
 }
+
+.social-buttons-container {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.social-buttons {
+  display: inline-block;
+  width: auto;
+}
