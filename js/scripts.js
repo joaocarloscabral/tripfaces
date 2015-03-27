@@ -3,7 +3,7 @@ $(document).ready(function() {
     {
       sel : $('.demo-index.step1'),
       position : 's',
-      content : 'Hi, I am Trip.js',
+      content : 'Hi, I am tripfaces',
       delay : 2000,
       callback : function(i) {
         console.log("step "+ i +" is finished");
