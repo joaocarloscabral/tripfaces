@@ -22,18 +22,7 @@ Right now tripfaces and Trip.js support lots of useful stuffs like **keyboard bi
 	  <type>war</type>
 	</dependency>
 </dependencies>
-...
-<repositories>
-...
-	<repository>
-		<id>oss-sonatype</id>
-		<name>oss-sonatype</name>
-		<url>https://oss.sonatype.org/content/repositories/snapshots/</url>
-		<snapshots>
-			<enabled>true</enabled>
-		</snapshots>
-	</repository>
-</repositories>
+
 ```			
 * xhtml file
 ```xhtml
