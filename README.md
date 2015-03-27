@@ -7,7 +7,7 @@ Right now tripfaces and Trip.js support lots of useful stuffs like **keyboard bi
 
 # Version
 
-0.0.1-SNAPSHOT
+1.0.0
 
 # Setup 
 
@@ -18,7 +18,7 @@ Right now tripfaces and Trip.js support lots of useful stuffs like **keyboard bi
 	<dependency>
 	  <groupId>org.tripfaces</groupId>
 	  <artifactId>components</artifactId>
-	  <version>0.0.1-SNAPSHOT</version>
+	  <version>1.0.0</version>
 	  <type>war</type>
 	</dependency>
 </dependencies>
